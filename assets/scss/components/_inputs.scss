@@ -1,0 +1,59 @@
+.custom-input {
+    &__quantity {
+        position: relative;
+        display: inline-flex;
+        max-width: 4.375rem;
+        height: 3.125rem;
+        input[type=number] {
+            height: 100%;
+            max-width: 3.125rem;
+            background: transparent;
+            border: 0.0625rem solid $athens-gray;
+            border-radius: 0.3125rem 0 0 0.3125rem;
+            font-size: 1rem;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: $silver-chalice;
+            outline: none;
+            -moz-appearance: textfield;
+
+            &::-webkit-inner-spin-button,
+            &::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            :focus {
+                outline: 0;
+            }
+        }
+
+        &__nav {
+            position: relative;
+            border-radius: 0 0.3125rem 0.3125rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__button {
+            position: relative;
+            cursor: pointer;
+            width: 1.75rem;
+            text-align: center;
+            color: $spun-pearl;
+            font-size: 0.8125rem;
+            line-height: 1.7;
+            background: $athens-gray;
+            user-select: none;
+        }
+
+        &__up {
+            height: 50%;
+        }
+
+        &__down {
+            height: 50%;
+        }
+    }
+}

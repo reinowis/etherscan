@@ -1,0 +1,36 @@
+.feature-item {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    &__image {
+        text-align: left;
+        margin-bottom: 1.25rem;
+    }
+    &__title {
+        flex-grow: 1;
+        font-size: 1.5rem;
+        letter-spacing: -0.03em;
+        line-height: 2.125rem;
+        color: $cod-gray;
+        text-align: left;
+    }
+    &__content {
+        font-size: 1.125rem;
+        letter-spacing: -0.02em;
+        line-height: 1.75rem;
+        color: $cod-gray;
+        text-align: left;
+    }
+    &--center {
+        .feature-item {
+            &__image {
+                text-align: center;
+            }        
+            &__title {
+                text-align: center;
+            }
+            &__content {
+                text-align: center;
+            }
+        }
+    }
+}
