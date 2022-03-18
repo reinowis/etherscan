@@ -23,7 +23,7 @@ function html() {
         .pipe(gulpIf(isProd, htmlmin({
             collapseWhitespace: true
         })))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('docs'));
 }
 
 function css() {
@@ -35,7 +35,7 @@ function css() {
       includePaths: ['node_modules']
     }).on('error', sass.logError))
     .pipe(cssmin())
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('docs/css'))
     .pipe(browserSync.stream());
 }
 
@@ -45,18 +45,18 @@ function js() {
             hideConsole: true
         }))
         .pipe(concat('index.js'))
-        .pipe(gulp.dest('dist/js'));
+        .pipe(gulp.dest('docs/js'));
 }
 
 function img() {
     return gulp.src('assets/img/*')
-        .pipe(gulp.dest('dist/img/'));
+        .pipe(gulp.dest('docs/img/'));
 }
 
 function serve() {
     browserSync.init({
         open: true,
-        server: './dist'
+        server: './docs'
     });
 }
 
@@ -76,7 +76,7 @@ function watchFiles() {
 }
 
 function del() {
-    return gulp.src('dist/*', {read: false})
+    return gulp.src('docs/*', {read: false})
         .pipe(clean());
 }
 
