@@ -26,7 +26,7 @@ baseurl: "/etherscan" # the subpath of your site, e.g. /blog
 url: "https://reinowis.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: jekyll-theme-clean-blog
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
