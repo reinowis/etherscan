@@ -22,8 +22,8 @@ title: Etherscan
 email: maihuynh16995@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Website built with Bootstrap 5.1.3 and Jekyll
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/etherscan" # the subpath of your site, e.g. /blog
+url: "https://reinowis.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: jekyll-theme-clean-blog
