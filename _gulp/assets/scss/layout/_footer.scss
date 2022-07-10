@@ -1,0 +1,48 @@
+.footer {
+    font-size: 1.125rem;
+    letter-spacing: -0.02em;
+    line-height: 1.75rem;
+    text-align: left;
+    color: rgba($color: $cod-gray, $alpha: 0.5);
+    &__col {
+        margin-bottom: 3.75rem;
+        &__title {
+            color: $black;
+            text-transform: uppercase;
+        }
+    }
+    &__list {
+        @include list-unstyled;
+        &__item {
+            font-size: 1.125rem;
+            letter-spacing: -0.02em;
+            line-height: 2rem;
+            text-align: left;
+            color: rgba($color: $cod-gray, $alpha: 0.5);
+            a {
+                text-decoration: none;
+                color: unset;
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+    &__bottom {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    &__social {
+        &__item {
+            margin-left: 0.625rem;
+            text-decoration: none;
+            color: rgba($color: $cod-gray, $alpha: 0.5);
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+    &__divider {
+        margin: 0;
+    }
+}

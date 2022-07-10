@@ -1,0 +1,10 @@
+{%- for item in data.about -%}
+    <div class="col-12 col-sm-6 d-flex flex-column feature-item">
+        <div class="text-center text-sm-left feature-item__image">
+            <img src="{{item.image | absolute_url}}" alt="">
+        </div>
+        <h4 class="text-center text-sm-left feature-item__title">{{item.title}}</h4>
+        <p class="text-center text-sm-left feature-item__content">{{item.content}}</p>
+    </div>
+{%- endfor -%}
+

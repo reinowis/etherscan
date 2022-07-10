@@ -1,0 +1,28 @@
+.header {
+    &__wrapper {
+        background-color: $white;
+        border-bottom: none !important;
+        padding: 1.5rem 2rem;
+        &--fixed {
+            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+        }
+    }
+    &__cart {
+        text-decoration: none;
+        color: $cod-gray;
+        cursor: pointer;
+        &__number {
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            font-size: 0.875rem;
+            letter-spacing: -0.02em;
+            line-height: 1.5rem;
+            text-align: center;
+            border-radius: 100%;
+            background: $mantis;
+            color: $white;
+            user-select: none;
+        }
+    }
+}

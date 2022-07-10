@@ -1,0 +1,40 @@
+.section-highlight {
+    &__title {
+        font-size: 4.5rem;
+        letter-spacing: -0.05em;
+        line-height: 4.875rem;
+        text-align: left;
+        color: $cod-gray;
+    }
+    &__subtitle {
+        font-size: 1.375rem;
+        letter-spacing: -0.02em;
+        line-height: 2rem;
+        text-align: left;
+        color: rgba($color: $cod-gray, $alpha: 0.5);
+    }
+    &__caption {
+        font-size: 1.14rem;
+        letter-spacing: -0.02em;
+        line-height: 1.5rem;
+        text-align: left;
+        color: rgba($color: $cod-gray, $alpha: 0.5);
+    }
+    &__form {
+        margin-bottom: 11.14rem;
+        display: flex;
+        &__input {
+            margin-right: 1rem;
+        }
+    }
+    .section__animation {
+        max-height: 700px;
+        overflow: hidden;
+        &--activated {
+            #highlight-animation {
+                max-width: 350px;
+                animation: phone-moving forwards 1s;
+            }
+        }
+    }
+}

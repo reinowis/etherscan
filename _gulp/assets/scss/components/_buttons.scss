@@ -1,0 +1,18 @@
+.button-success {
+    border-radius: 0.3125rem;
+    background: $mantis;
+    font-size: 1rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: $white;
+    padding: 0 1.875rem;
+    max-height: 3.125rem;
+    line-height: 3.125rem;
+    @include text-truncate;
+    &:hover{
+        color: $white;
+    }
+}
+.button-purple {
+    @include button-purple;
+}

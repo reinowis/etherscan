@@ -1,0 +1,28 @@
+.section-about {
+    .section__animation {
+        position: relative;
+        overflow: hidden;
+        #about-man {
+            position: relative;
+            z-index: 1;
+            transform: translateX(-100vw);
+        }
+
+        #about-bg {
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            z-index: 0;
+            transform: translateX(100vw);
+        }
+        &--activated {
+            #about-man {
+                animation: man-moving forwards 1s;
+            }
+    
+            #about-bg {
+                animation: bg-moving forwards 1s;
+            }
+        }
+    }
+}
